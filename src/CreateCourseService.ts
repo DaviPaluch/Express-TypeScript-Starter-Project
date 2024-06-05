@@ -1,6 +1,14 @@
+
+interface Course {
+    name:string;
+    duration:number;
+    educator:string;    
+}
+
+
 class CreateCourseService{
-    execute(name:string, duration:number, educator:string) {
-        console.log(name, duration, educator)
+    execute(data:Course) {
+        console.log(data.name, data.duration, data.educator)
     }
 }
 
