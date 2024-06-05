@@ -1,0 +1,7 @@
+#Express TypeScript Starter Project
+
+Exemplo de como inicializar um projeto Express com TypeScript:
+ - como configurar rotas
+ - utilizar uma função nas rotas 
+ - trabalhar com tipagem de parâmetros
+ - definir parâmetros opcionais em uma função.

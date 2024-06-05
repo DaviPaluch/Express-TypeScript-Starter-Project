@@ -4,8 +4,13 @@ import CreateCourseService from './CreateCourseService'
 
 export function createCourse(req:Request,res:Response){
     CreateCourseService.execute({
-        name:"",
+        name:"Node",
+        //duration:1,
+        educator:"AA"
+    })
+    CreateCourseService.execute({
+        name:"React",
         duration:1,
-        educator:""
+        educator:"TT"
     })
 }

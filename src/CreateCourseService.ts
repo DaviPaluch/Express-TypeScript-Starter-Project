@@ -1,14 +1,14 @@
 
 interface Course {
-    name:string;
-    duration:number;
-    educator:string;    
+    name:string;        /* atributo mandatório por default*/
+    duration?:number;   /* '?' indica que o parâmetro é opcional */
+    educator:string;    /*  */
 }
 
 
 class CreateCourseService{
-    execute(data:Course) {
-        console.log(data.name, data.duration, data.educator)
+    execute({duration = 8,educator,name}:Course) {  //valor de 'duration' setado para 8 como default
+        console.log(name, duration, educator)
     }
 }
 
